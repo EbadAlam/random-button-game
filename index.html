@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random Button Game | Javascript</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="./icon.png">
+
+	<style type="text/css">
+		*{
+			padding:0px;
+			margin:0px;
+		}
+		header{
+			background: #a1a1a1;
+			padding: 10px;
+			text-align: center;
+			text-decoration: overline;
+			text-shadow: red 0px -2px,
+						 cyan 0px 2px;
+		}
+		.score{
+			margin-left: 80%;
+		}
+		.btns{
+			display: none;
+		}
+		.buttons{
+			border: 2px solid black;
+			height: 305px;
+			padding-top: 20px;
+			margin-left: 10px; 
+			margin-right: 10px;
+		}
+		.sub-btns-div{
+			margin-bottom: 20px;
+			display: flex;
+			justify-content: space-between;
+		}
+		.start-btn{
+			margin-left: 20px;
+			margin-bottom: 50px;
+		}
+		.error{
+			margin: 10px;
+			padding: 10px;
+			background: red;
+			color:white;
+			border-radius: 20px;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="sub-heading">
+			<h1>Random Button Game | Javascript</h1>
+		</div>
+	</header>
+	<div class="score">
+		<h2 class="score-heading">
+			Score
+		</h2>
+		<h3 class="scoreValue"></h3>
+	</div>
+	<div class="start-btn">
+		<button class="btn-primary btn btn_start">Start</button>
+	</div>
+	<div class="error"></div>
+	<div class="buttons">
+		<div class="sub-btns-div">
+			<div>
+				<button class="btn-primary btn btns btn-1">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-2">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-3">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-4">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-5">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-6">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-7">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-8">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-9">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-10">Click</button>
+			</div>
+		</div>
+		<div class="sub-btns-div">
+			<div>
+				<button class="btn-primary btn btns btn-11">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-12">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-13">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-14">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-15">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-16">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-17">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-18">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-19">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-20">Click</button>
+			</div>
+		</div>
+		<div class="sub-btns-div">
+			<div>
+				<button class="btn-primary btn btns btn-21">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-22">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-23">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-24">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-25">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-26">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-27">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-28">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-29">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-30">Click</button>
+			</div>
+		</div>
+		<div class="sub-btns-div">
+			<div>
+				<button class="btn-primary btn btns btn-31">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-32">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-33">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-34">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-35">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-36">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-37">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-38">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-39">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-40">Click</button>
+			</div>
+		</div>
+		<div class="sub-btns-div">
+			<div>
+				<button class="btn-primary btn btns btn-41">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-42">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-43">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-44">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-45">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-46">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-47">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-48">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-49">Click</button>
+			</div>
+			<div>
+				<button class="btn-primary btn btns btn-50">Click</button>
+			</div>
+		</div>
+	</div>
+
+		<script type="text/javascript">
+			const btn_start = document.querySelector('.btn_start');
+			const scoreValue = document.querySelector('.scoreValue');
+			let error = document.querySelector('.error');
+			const randomNumber = Math.floor(Math.random() * 50) + 1;
+
+			var recent_score = localStorage.getItem("score");
+			window.onload = () => {
+				scoreValue.innerHTML = recent_score;
+			}
+
+			btn_start.onclick = () => {
+				window.location.reload();
+			}
+			
+			(function loop() {
+				setTimeout(function () {
+					var btn = document.querySelector('.btn-'+randomNumber);
+					btn.style.display = 'block';
+						btn.onclick = () => {
+							event.preventDefault();
+							btn.style.display = 'none';
+							recent_score ++;
+							localStorage.setItem('score',recent_score); 
+							location.reload();
+							loop()
+						}
+						setTimeout(function(e){
+							error.innerHTML = `Aww! You Lost &#128542. Your Score Is ${recent_score}`;
+							error.style.display = 'block';
+							btn.style.display = 'none';
+							recent_score = '00';
+							localStorage.setItem('score',recent_score); 
+							
+						},900)
+				}, 1000);
+				}())
+			
+
+		</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
